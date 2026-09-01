@@ -621,7 +621,7 @@ Tailscale solves this by creating a virtual overlay network. It assigns a new, u
 
 By providing a persistent, routable IP for every device regardless of its location, Tailscale effectively checks off our first major requirement for a stable peer-to-peer mesh.
 
-This is the part where Tailscale enters the story. I have a [separate deep dive](./blog_1.md) on how Tailscale gets through NAT using STUN, UDP hole punching, WireGuard, and DERP relays. For this Swarm guide, the key takeaway is simple: Tailscale gives every machine a stable `100.x.y.z` address that is routable inside the tailnet.
+This is the part where Tailscale enters the story. I have a [separate deep dive](./tailscale-nat-deep-dive.md) on how Tailscale gets through NAT using STUN, UDP hole punching, WireGuard, and DERP relays. For this Swarm guide, the key takeaway is simple: Tailscale gives every machine a stable `100.x.y.z` address that is routable inside the tailnet.
 
 ### Docker Swarm Networking: Ports, Protocols & Communication Patterns
 
